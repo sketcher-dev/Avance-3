@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <h2>¡Prepárete para disparar tu Efectividad Personal!</h2>
+    <p>
+    Hola <?= candidato.nombre ?> (<?= candidato.nick ?>),
+    </p>
+    <p>Gracias por haberte pasado por el stand de <strong>Autentia</strong> en la <strong>Tarugoconf2019</strong>.
+    ¡No sólo eso!, participaste en uno de nuestros concursos y no has quedado nada mal ;-)</p>
+    <p>En tu caso en el puesto <?= candidato.puesto ?> !!!</p>
+    <? if (candidato.puesto <= 1) { ?>
+      <p><strong>Has ganado una de las plazas</strong> disponibles 
+    <? } else { ?>
+      <p>Estás en <strong>lista de espera</strong> 
+    <? } ?>
+    para el taller de <strong>Efectividad personal con GTD y Personal Kanban</strong>. 
+    En el taller veremos la importancia de gestionar adecuadamente nuestros recursos, crítica para los trabajadores del conocimiento. 
+    No necesitamos  más trabajo duro, sino trabajo inteligente. Con <i>los 5 pasos de GTD</i> (capturar, procesar, organizar, revisar 
+    y hacer) aprenderemos a ser más <u>efectivos</u> (hacer lo adecuado), <u>eficaces</u> (hacerlo correctamente) y <u>eficientes</u> 
+    (minimizando nuestro esfuerzo). Suena bien, ¿no? Pues complementaremos el sistema con <i>Personal Kanban</i>, que nos ayudará a 
+    ver todo más claro y a mantenernos enfocados.</p>
+    <p>Será el próximo día <strong>14/11/2019 de 18:00 a 20:00</strong> en las instalaciones de <i>Autentia</i> 
+    (<a href="https://goo.gl/maps/1aMhb3QLUVaNkCvY8">Edificio BestPoint, Avenida de Castilla, 1, Planta 2, Local 21B, 28830 
+    San Fernando de Henares, Madrid</a>). 
+    <? if (candidato.puesto <= 3) { ?>
+      Pero antes necesito tu <strong>confirmación de asistencia</strong> así que...
+    <? } else { ?>
+      ¿Quieres que te <strong>avise</strong> si se libera alguna plaza? 
+    <? } ?>
+    </p>
+    <p>Si estás interesado <strong>responde a este correo</strong> y te mantengo al tanto de todo.</p>
+    
+    <p>Un saludo,</p>
+    <p>H. P. Lovecraft.</p>
+</body>
+</html>
